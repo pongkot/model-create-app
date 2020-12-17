@@ -1,0 +1,12 @@
+{
+  "name": "model-create-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pongkot Sae-li <pongkot.saeli@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "4.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.1.3"
+  }
+}

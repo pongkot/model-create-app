@@ -44,9 +44,11 @@ const properties: string = input.properties
 
 const methods: string = input.properties
   .map((i: { name: string; type: string }) => {
+    const firstChar: string = i.name[0];
+    const name = `${firstChar.toUpperCase()}${i.name.substr(1)}`;
     return {
-      getter: `get${i.name}(): ${i.type} { return this.${i.name}; };`,
-      setter: `set${i.name}(${i.name}: ${i.type}): this { this.${i.name} = ${i.name}; return this; };`,
+      getter: `get${name}(): ${i.type} { return this.${i.name}; };`,
+      setter: `set${name}(${i.name}: ${i.type}): this { this.${i.name} = ${i.name}; return this; };`,
     };
   })
   .map((i) => {

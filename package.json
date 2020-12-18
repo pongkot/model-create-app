@@ -5,7 +5,8 @@
   "author": "Pongkot Sae-li <pongkot.saeli@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "start": "python3 -m http.server --directory dist"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
